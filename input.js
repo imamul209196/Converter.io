@@ -16,7 +16,7 @@ function convertToPostfix(infix) {
      }
      else if (ch == ')') {
         while (stack.length != 0 && stack[stack.length - 1] != '(') {
-           output += stackHTML.pop();
+           output += stack.pop();
            output += ' ';
         }
         stack.pop();
