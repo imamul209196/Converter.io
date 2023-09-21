@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        margin-top: 10px;
+        background-color: rgb(19, 7, 119);
+        color: aliceblue;
+        border-radius: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 15px;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.89;
+      }
+      h1 {
+        color: rgb(241, 241, 247);
+        background-color: rgb(158, 9, 9);
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 50px;
+      }
+      .intro {
+        background-color: rgba(153, 44, 17, 0.582);
+        font-family: Arial, Helvetica, sans-serif;
+        color: bisque;
+        width: 460px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 2.5px;
+      }
+      .guidance {
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .col {
+        color: red;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 22px;
+        border-radius: 3px;
+      }
+
+      input {
+        width: 300px;
+        margin-top: 8px;
+        border-radius: 4px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-color: rgb(230, 19, 19);
+        border-width: 3.5px;
+      }
+      label {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(32, 29, 3, 0.795);
+      }
+    </style>
+    <script src="input.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to Imamul Hossen's Project.</h1>
+    <p class="intro">
+      Here you can convert your infix expressino to postfix expression.
+    </p>
+    <p class="guidance">
+      You can only use the expressino with
+      <mark class="col">+ , - , * , /</mark>
+    </p>
+    <label type="input"><b>Enter yor Infix Expression :</b></label
+    ><br />
+    <input type="text" id="myname" /><br />
+    <button onclick="Write()">Submit</button><br />
+    <label type="output"><b>Here is your Postfix Expression :</b></label
+    ><br />
+    <input type="text" id="123" readonly />
+  </body>
+</html>
